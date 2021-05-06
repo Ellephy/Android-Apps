@@ -2,14 +2,11 @@ package com.ap2.criminalintent
 
 import android.content.Context
 import android.os.Bundle
-import android.text.format.DateFormat
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DiffUtil
@@ -17,9 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
-import kotlin.time.Duration
 
-private const val TAG = "CrimeListFragment"
+//private const val TAG = "CrimeListFragment"
 private const val REQUIRE_POLICE = 1
 private const val NOT_REQUIRE_POLICE = 0
 
@@ -135,7 +131,7 @@ class CrimeListFragment : Fragment() {
     }
 
     //private inner class CrimeAdapter(var crimes: List<Crime>) :
-    private inner class CrimeAdapter() :
+    private inner class CrimeAdapter :
         ListAdapter<Crime, CrimeHolder>(ListAdapterCallBack()) {
         //RecyclerView.Adapter<CrimeHolder>() {
 
