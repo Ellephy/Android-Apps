@@ -2,7 +2,7 @@ package com.ap2.criminalintent
 
 import androidx.lifecycle.ViewModel
 
-class CrimeListViewModel: ViewModel() {
+class CrimeListViewModel : ViewModel() {
 
     /*var crimes = mutableListOf<Crime>()
 
@@ -19,4 +19,8 @@ class CrimeListViewModel: ViewModel() {
 
     private val crimeRepository = CrimeRepository.get()
     val crimeListLiveData = crimeRepository.getCrimes() //val crimes = crimeRepository.getCrimes()
+
+    fun addCrime(crime: Crime) {
+        crimeRepository.addCrime(crime)
+    }
 }
